@@ -22,6 +22,7 @@ logging.basicConfig(
 def clean_logs(dry_run=False):
     if dry_run:
         logging.info("Running in dry-run mode. No files will be deleted.") 
+        return
     
     total_reclaimed_bytes = 0
     files_processed = 0
